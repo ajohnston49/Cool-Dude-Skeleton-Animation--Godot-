@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://rbmld3sn16kw"]
+
+[ext_resource type="PackedScene" uid="uid://bpqna0ymqbaws" path="res://cool_guy.tscn" id="1_hgc2c"]
+[ext_resource type="Texture2D" uid="uid://ducp4r52tqhup" path="res://Assets/pieces/torso.png" id="2_ui7ud"]
+
+[node name="world" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -26.702309
+offset_top = -106.120895
+offset_right = 13.297691
+offset_bottom = -66.120895
+scale = Vector2(30.720003, 19.560003)
+texture = ExtResource("2_ui7ud")
+
+[node name="cool_guy" parent="." instance=ExtResource("1_hgc2c")]
+position = Vector2(507.70203, 570.10254)
+rotation = 0.043363556
+scale = Vector2(3.984498, 3.3741531)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 277.73984
+offset_top = 7.027725
+offset_right = 545.73987
+offset_bottom = 30.027725
+scale = Vector2(2.1548984, 4.0607553)
+text = "Hold Space to Jump &  Hold  X to Kick"
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+offset_left = 3.8974304
+offset_top = 3.8974304
+offset_right = 225.89743
+offset_bottom = 104.89743
+text = "By: Alex Johnston
+Ivy Tech Community College 
+11/16/2025
+Adv Sim and Game Design"
